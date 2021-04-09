@@ -1,0 +1,39 @@
+@media screen and (min-height: 736px) {
+  .page-wrapper {
+    overflow: hidden;
+    justify-content: center;
+    min-height: 100vh; } }
+
+@media screen and (min-width: 480px) {
+  body {
+    background-image: url("/dist/images/bg-intro-desktop.png"); }
+  .page-wrapper .hero {
+    max-width: 560px; }
+    .page-wrapper .hero h1 {
+      font-size: 40px; }
+  .page-wrapper .form-wrap form {
+    margin-top: 25px;
+    padding: 36px; }
+    .page-wrapper .form-wrap form p span {
+      display: inline; } }
+
+@media screen and (min-width: 801px) {
+  .page-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100vh; }
+    .page-wrapper .hero {
+      flex: 1;
+      margin: 0;
+      margin-right: 20px;
+      text-align: left; }
+      .page-wrapper .hero h1 {
+        font-size: 50px;
+        margin-bottom: 30px; }
+    .page-wrapper .form-wrap {
+      flex: 1;
+      margin-bottom: 0; } }
+
+@media screen and (min-width: 1440px) {
+  body {
+    background-size: contain; } }

@@ -1,0 +1,139 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  background: #ff7a7a;
+  background-image: url("/dist/images/bg-intro-desktop.png");
+  background-size: cover; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px; }
+
+.page-wrapper {
+  height: initial;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .page-wrapper .hero {
+    text-align: center;
+    margin: 36px 0; }
+    .page-wrapper .hero h1 {
+      font-size: 30px;
+      line-height: 110%;
+      color: white;
+      margin-bottom: 20px; }
+    .page-wrapper .hero p {
+      color: white;
+      font-weight: 500; }
+  .page-wrapper .form-wrap {
+    width: 100%;
+    max-width: 560px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 36px; }
+    .page-wrapper .form-wrap .trial-btn {
+      background: #6055a5;
+      color: white;
+      text-align: center;
+      padding: 20px 25px;
+      border-radius: 10px; }
+      .page-wrapper .form-wrap .trial-btn span {
+        font-weight: 600; }
+    .page-wrapper .form-wrap form {
+      display: flex;
+      flex-direction: column;
+      background: white;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 10px; }
+      .page-wrapper .form-wrap form label {
+        display: block; }
+      .page-wrapper .form-wrap form .hidden {
+        opacity: 0;
+        height: 0;
+        width: 0; }
+      .page-wrapper .form-wrap form input {
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 16px;
+        padding: 15px 20px;
+        color: #3e3c49;
+        border: 1px solid #b9b6d3;
+        border-radius: 5px; }
+      .page-wrapper .form-wrap form input:focus-visible {
+        outline: none;
+        border-radius: 5px;
+        border: 1px solid #3e3c49; }
+      .page-wrapper .form-wrap form input[type="submit"] {
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        border: none;
+        border-radius: 5px;
+        background: #38cc8c;
+        color: white;
+        cursor: pointer; }
+      .page-wrapper .form-wrap form p {
+        text-align: center;
+        font-size: 12px;
+        color: #b9b6d3; }
+        .page-wrapper .form-wrap form p span {
+          color: #ff7a7a;
+          display: block; }
+
+@media screen and (min-height: 736px) {
+  .page-wrapper {
+    overflow: hidden;
+    justify-content: center;
+    min-height: 100vh; } }
+
+@media screen and (min-width: 480px) {
+  body {
+    background-image: url("/dist/images/bg-intro-desktop.png"); }
+  .page-wrapper .hero {
+    max-width: 560px; }
+    .page-wrapper .hero h1 {
+      font-size: 40px; }
+  .page-wrapper .form-wrap form {
+    margin-top: 25px;
+    padding: 36px; }
+    .page-wrapper .form-wrap form p span {
+      display: inline; } }
+
+@media screen and (min-width: 801px) {
+  .page-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100vh; }
+    .page-wrapper .hero {
+      flex: 1;
+      margin: 0;
+      margin-right: 20px;
+      text-align: left; }
+      .page-wrapper .hero h1 {
+        font-size: 50px;
+        margin-bottom: 30px; }
+    .page-wrapper .form-wrap {
+      flex: 1;
+      margin-bottom: 0; } }
+
+@media screen and (min-width: 1440px) {
+  body {
+    background-size: contain; } }

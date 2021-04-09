@@ -1,0 +1,126 @@
+@import "variables";
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: $poppins;
+  background: $primaryRed;
+  background-image: url("/dist/images/bg-intro-desktop.png");
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+}
+
+.page-wrapper {
+  height: initial;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .hero {
+    text-align: center;
+    margin: 36px 0;
+    h1 {
+      font-size: 30px;
+      line-height: 110%;
+      color: white;
+      margin-bottom: 20px;
+    }
+    p {
+      color: white;
+      font-weight: 500;
+    }
+  }
+
+  .form-wrap {
+    width: 100%;
+    max-width: 560px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 36px;
+    .trial-btn {
+      span {
+        font-weight: 600;
+      }
+      background: $accentBlue;
+      color: white;
+      text-align: center;
+      padding: 20px 25px;
+      border-radius: 10px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      background: white;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 10px;
+      label {
+        display: block;
+      }
+      .hidden {
+        opacity: 0;
+        height: 0;
+        width: 0;
+      }
+      input {
+        font-family: $poppins;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 16px;
+        padding: 15px 20px;
+        color: $darkishBlue;
+        border: 1px solid $grayishBlue;
+        border-radius: $br;
+      }
+      input:focus-visible {
+        outline: none;
+        border-radius: $br;
+        border: 1px solid $darkishBlue;
+      }
+      input[type="submit"] {
+        font-family: $poppins;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        border: none;
+        border-radius: $br;
+        background: $primaryGreen;
+        color: white;
+        cursor: pointer;
+        // color: $grayishBlue;
+      }
+      p {
+        text-align: center;
+        font-size: 12px;
+        color: $grayishBlue;
+        span {
+          color: $primaryRed;
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@import "mediaQueries.scss";

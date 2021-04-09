@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "sass": "^1.32.8"
+  },
+  "name": "intro-component-with-signup-form-master",
+  "description": "![Design preview for the Intro component with sign up form coding challenge](./design/desktop-preview.jpg)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css --recursive"
+  },
+  "author": "Jed Salmon",
+  "license": "ISC"
+}

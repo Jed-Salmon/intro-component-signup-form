@@ -1,0 +1,75 @@
+@media screen and (min-height: 736px) {
+  .page-wrapper {
+    overflow: hidden;
+    justify-content: center;
+    min-height: 100vh;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  body {
+    background-image: url("/dist/images/bg-intro-desktop.png");
+  }
+  .page-wrapper {
+    .hero {
+      max-width: 560px;
+      h1 {
+        font-size: 40px;
+      }
+    }
+
+    .form-wrap form {
+      margin-top: 25px;
+      padding: 36px;
+      p span {
+        display: inline;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .page-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100vh;
+
+    .hero {
+      flex: 1;
+      margin: 0;
+      margin-right: 20px;
+      text-align: left;
+      h1 {
+        font-size: 50px;
+        margin-bottom: 30px;
+      }
+      p {
+      }
+    }
+
+    .form-wrap {
+      flex: 1;
+      margin-bottom: 0;
+      a {
+      }
+
+      form {
+        label {
+        }
+        input {
+        }
+        // input[type=text]
+        p {
+          span {
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    background-size: contain;
+  }
+}
