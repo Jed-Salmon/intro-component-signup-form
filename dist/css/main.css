@@ -108,6 +108,7 @@ a {
             border: 2px solid #3e3c49; }
           .page-wrapper .form-wrap form .form-control .input-wrap .fas.fa-exclamation-circle {
             position: absolute;
+            font-size: 18px;
             right: 20px;
             top: 20px;
             color: #ff7a7a;
