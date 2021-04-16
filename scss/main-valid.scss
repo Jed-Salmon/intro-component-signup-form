@@ -79,17 +79,6 @@ a {
       padding: 20px;
       margin-top: 20px;
       border-radius: 10px;
-      .form-control.error small {
-        display: block;
-        visibility: visible;
-        color: $primaryRed;
-      }
-      .form-control.error input {
-        border-color: $primaryRed;
-      }
-      .form-control.success input {
-        border-color: $primaryGreen;
-      }
       .form-control {
         display: flex;
         flex-direction: column;
@@ -103,43 +92,44 @@ a {
         }
         small {
           display: none;
-          visibility: hidden;
+          opacity: 0;
           margin-top: -10px;
           margin-bottom: 10px;
           text-align: right;
           padding-right: 10px;
         }
-        .input-wrap {
-          display: flex;
-          position: relative;
-          input {
-            flex: 1;
-            font-family: $poppins;
-            font-size: 16px;
-            font-weight: 600;
-            margin-bottom: 16px;
-            padding: 15px 20px;
-            color: $darkishBlue;
-            border: 1px solid $grayishBlue;
-            border-radius: $br;
-          }
-          input:focus-visible {
-            outline: none;
-            border-radius: $br;
-            border: 2px solid $darkishBlue;
-          }
-          .fas.fa-exclamation-circle {
-            position: absolute;
-            right: 20px;
-            top: 20px;
-            color: $primaryRed;
-            visibility: hidden;
-          }
-          .fas.fa-exclamation-circle.error {
-            visibility: visible;
-          }
+        input {
+          font-family: $poppins;
+          font-size: 16px;
+          font-weight: 600;
+          margin-bottom: 16px;
+          padding: 15px 20px;
+          color: $darkishBlue;
+          border: 1px solid $grayishBlue;
+          border-radius: $br;
         }
-        button {
+        input:valid {
+          border: 2px solid $primaryGreen;
+        }
+
+        input:invalid {
+          border: 2px solid $primaryRed;
+        }
+
+        input:invalid:required {
+          color: $primaryRed;
+        }
+
+        input:valid:required {
+          color: $primaryGreen;
+        }
+
+        input:focus-visible {
+          outline: none;
+          border-radius: $br;
+          border: 2px solid $darkishBlue;
+        }
+        input[type="submit"] {
           font-family: $poppins;
           font-size: 16px;
           font-weight: 500;
@@ -150,8 +140,6 @@ a {
           background: $primaryGreen;
           color: white;
           cursor: pointer;
-          padding: 15px 20px;
-          margin-bottom: 16px;
           // color: $grayishBlue;
         }
         p {

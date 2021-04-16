@@ -10,16 +10,12 @@
       rel="stylesheet"
     />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main-valid.css" />
     <title>Frontend Mentor | Intro component with sign up form</title>
   </head>
   <body>
@@ -40,60 +36,52 @@
         <form id="form" action="">
           <div class="form-control">
             <label class="hidden" for="First Name">First Name</label>
-            <div class="input-wrap">
-              <input
-                id="fname"
-                type="text"
-                name="First Name"
-                placeholder="First Name"
-              />
-              <i class="fas fa-exclamation-circle"></i>
-            </div>
-            <small></small>
+            <input
+              id="fname"
+              type="text"
+              name="First Name"
+              placeholder="First Name"
+              required
+            />
+            <small>Error Message</small>
           </div>
 
           <div class="form-control">
             <label class="hidden" for="Last Name">Last Name</label>
-            <div class="input-wrap">
-              <input
-                id="lname"
-                type="text"
-                name="Last Name"
-                placeholder="Last Name"
-              />
-              <i class="fas fa-exclamation-circle"></i>
-            </div>
-            <small></small>
+            <input
+              id="lname"
+              type="text"
+              name="Last Name"
+              placeholder="Last Name"
+              required
+            />
+            <small>Error Message</small>
           </div>
 
           <div class="form-control">
             <label class="hidden" for="Email Address">Email Address</label>
-            <div class="input-wrap">
-              <input
-                id="email"
-                type="text"
-                name="Email Address"
-                placeholder="Email Address"
-              />
-              <i class="fas fa-exclamation-circle"></i>
-            </div>
-            <small></small>
+            <input
+              id="email"
+              type="email"
+              name="Email Address"
+              placeholder="Email Address"
+              required
+            />
+            <small>Error Message</small>
           </div>
 
           <div class="form-control">
             <label class="hidden" for="Password">Password</label>
-            <div class="input-wrap">
-              <input
-                id="password"
-                type="password"
-                name="Password"
-                placeholder="Password"
-              />
-              <i class="fas fa-exclamation-circle"></i>
-            </div>
-            <small></small>
+            <input
+              id="password"
+              type="password"
+              name="Password"
+              placeholder="Password"
+              required
+            />
+            <small>Error Message</small>
 
-            <button type="submit">Claim your free trial</button>
+            <input type="submit" value="Claim your free trial" />
           </div>
           <p class="light">
             By clicking the button, you are agreeing to our
@@ -103,6 +91,4 @@
       </div>
     </div>
   </body>
-
-  <script src="./index.js"></script>
 </html>
