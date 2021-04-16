@@ -136,6 +136,9 @@ a {
             color: $primaryRed;
             visibility: hidden;
           }
+          .fas.fa-exclamation-circle.success {
+            visibility: hidden;
+          }
           .fas.fa-exclamation-circle.error {
             visibility: visible;
           }

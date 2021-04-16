@@ -112,6 +112,8 @@ a {
             top: 20px;
             color: #ff7a7a;
             visibility: hidden; }
+          .page-wrapper .form-wrap form .form-control .input-wrap .fas.fa-exclamation-circle.success {
+            visibility: hidden; }
           .page-wrapper .form-wrap form .form-control .input-wrap .fas.fa-exclamation-circle.error {
             visibility: visible; }
         .page-wrapper .form-wrap form .form-control button {

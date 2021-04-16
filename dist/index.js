@@ -15,10 +15,11 @@ const showError = (input, message) => {
   formControl.className = "form-control error";
   const small = formControl.querySelector("small");
   small.innerText = message;
-  console.log(input);
 };
 
 const showSuccess = (input) => {
+  const icon = input.nextElementSibling;
+  icon.className = "fas fa-exclamation-circle success";
   const formControl = input.parentElement.parentElement;
   formControl.className = "form-control success";
 };
