@@ -11,6 +11,8 @@ const getFieldName = (input) => {
 const showError = (input, message) => {
   const icon = input.nextElementSibling;
   icon.className = "fas fa-exclamation-circle error";
+  const field = input;
+  field.className = "error";
   const formControl = input.parentElement.parentElement;
   formControl.className = "form-control error";
   const small = formControl.querySelector("small");
@@ -20,8 +22,8 @@ const showError = (input, message) => {
 const showSuccess = (input) => {
   const icon = input.nextElementSibling;
   icon.className = "fas fa-exclamation-circle success";
-  const formControl = input.parentElement.parentElement;
-  formControl.className = "form-control success";
+  const field = input;
+  field.className = "success";
 };
 
 const checkRequired = (inputErr) => {

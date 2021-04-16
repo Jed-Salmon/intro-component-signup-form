@@ -68,10 +68,6 @@ a {
         display: block;
         visibility: visible;
         color: #ff7a7a; }
-      .page-wrapper .form-wrap form .form-control.error input {
-        border-color: #ff7a7a; }
-      .page-wrapper .form-wrap form .form-control.success input {
-        border-color: #38cc8c; }
       .page-wrapper .form-wrap form .form-control {
         display: flex;
         flex-direction: column; }
@@ -100,8 +96,12 @@ a {
             margin-bottom: 16px;
             padding: 15px 20px;
             color: #3e3c49;
-            border: 1px solid #b9b6d3;
+            border: 2px solid #b9b6d3;
             border-radius: 5px; }
+          .page-wrapper .form-wrap form .form-control .input-wrap input.error {
+            border-color: #ff7a7a; }
+          .page-wrapper .form-wrap form .form-control .input-wrap input.success {
+            border-color: #38cc8c; }
           .page-wrapper .form-wrap form .form-control .input-wrap input:focus-visible {
             outline: none;
             border-radius: 5px;

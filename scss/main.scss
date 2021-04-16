@@ -84,12 +84,6 @@ a {
         visibility: visible;
         color: $primaryRed;
       }
-      .form-control.error input {
-        border-color: $primaryRed;
-      }
-      .form-control.success input {
-        border-color: $primaryGreen;
-      }
       .form-control {
         display: flex;
         flex-direction: column;
@@ -121,8 +115,14 @@ a {
             margin-bottom: 16px;
             padding: 15px 20px;
             color: $darkishBlue;
-            border: 1px solid $grayishBlue;
+            border: 2px solid $grayishBlue;
             border-radius: $br;
+          }
+          input.error {
+            border-color: $primaryRed;
+          }
+          input.success {
+            border-color: $primaryGreen;
           }
           input:focus-visible {
             outline: none;
