@@ -22,6 +22,8 @@ const showError = (input, message) => {
 const showSuccess = (input) => {
   const icon = input.nextElementSibling;
   icon.className = "fas fa-exclamation-circle success";
+  const formControl = input.parentElement.parentElement;
+  formControl.className = "form-control success";
   const field = input;
   field.className = "success";
 };
